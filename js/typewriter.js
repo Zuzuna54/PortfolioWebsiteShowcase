@@ -64,31 +64,52 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-/* When the user clicks on the button, 
+document.addEventListener("DOMContentLoaded", function () {
+  /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction1() {
-  document.getElementById("Fed-Drop").classList.toggle("show");
-}
-function myFunction2() {
-  document.getElementById("nat-drop").classList.toggle("show");
-}
-function myFunction2() {
-  document.getElementById("club-drop").classList.toggle("show");
-}
-function myFunction2() {
-  document.getElementById("var-drop").classList.toggle("show");
-}
+  function myFunction1() {
+    document.getElementById("Fed-Drop").classList.toggle("show");
+  }
+  function myFunction2() {
+    document.getElementById("nat-drop").classList.toggle("show");
+  }
+  function myFunction3() {
+    document.getElementById("club-drop").classList.toggle("show");
+  }
+  function myFunction4() {
+    document.getElementById("var-drop").classList.toggle("show");
+  }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
+        }
       }
     }
+  };
+
+  window.onscroll = function () {
+    stickyFunction();
+  };
+
+  var navbar = document.getElementsByClassName("navbar")[0];
+  var sticky = navbar.offsetTop;
+  var offset = window.pageYOffset;
+  console.log(navbar, offset, sticky);
+
+  function stickyFunction() {
+    if (offset >= sticky) {
+      navbar.classList.add("sticky");
+      // console.log(navbar);
+    } else {
+      // console.log(navbar);
+      navbar.classList.remove("sticky");
+    }
   }
-};
+});
