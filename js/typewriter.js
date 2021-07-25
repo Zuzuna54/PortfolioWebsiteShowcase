@@ -72,14 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.getElementsByClassName("navbar")[0];
   var sticky = navbar.offsetTop;
   var offset = window.pageYOffset;
-  console.log(navbar, offset, sticky);
 
   function stickyFunction() {
     if (offset >= sticky) {
       navbar.classList.add("sticky");
-      // console.log(navbar);
     } else {
-      // console.log(navbar);
       navbar.classList.remove("sticky");
     }
   }
