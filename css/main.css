@@ -245,19 +245,19 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 }
-.dropbtn {
+/* .dropbtn {
   background-color: #3498db;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-}
+} */
 
-.dropbtn:hover,
+/* .dropbtn:hover,
 .dropbtn:focus {
   background-color: #2980b9;
-}
+} */
 
 .dropdown {
   position: relative;

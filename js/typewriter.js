@@ -66,8 +66,17 @@ function init() {
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function myFunction1() {
+  document.getElementById("Fed-Drop").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("nat-drop").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("club-drop").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("var-drop").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -83,18 +92,3 @@ window.onclick = function (event) {
     }
   }
 };
-
-window.onscroll = function () {
-  myFunction();
-};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
