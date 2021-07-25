@@ -4,6 +4,11 @@
   margin: auto;
   overflow: hidden; }
 
+.nav-container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden; }
+
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -21,7 +26,7 @@
 
 .btn-dark {
   color: #fff;
-  background: #333; }
+  background: #3f4267; }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
@@ -33,7 +38,7 @@ input[class^="btn-"]:hover {
   color: #000; }
 
 .bg-dark {
-  background: #333;
+  background: #3f4267;
   color: #fff; }
 
 .bg-light {
@@ -175,7 +180,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #3f4267; }
 
 ul {
   list-style: none; }
@@ -192,12 +197,16 @@ img {
   width: 70px;
   height: 70px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+  padding-bottom: 0.6rem; }
 
 #main-nav {
   display: flex;
-  justify-content: space-between;
-  padding-top: 1rem; }
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  background-color: #70808f;
+  opacity: 0.9; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -210,12 +219,12 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: #ccc; }
+      border-color: #3f4267; }
     #main-nav a.current {
       border-color: #ec3238; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/volley.jpeg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -226,7 +235,7 @@ img {
       line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/volley.jpeg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ec3238; }
 
@@ -276,7 +285,7 @@ img {
     transition: all 0.5s; }
   #home-c .process-icon {
     border-radius: 50%;
-    background: #333;
+    background: #3f4267;
     color: #fff;
     padding: 2rem;
     width: 70px;
@@ -291,7 +300,7 @@ img {
       height: 90px;
       line-height: 90px; }
       #home-c .process-icon:hover .process-step {
-        background: #333;
+        background: #3f4267;
         color: #fff; }
 
 #about-a .about-info {
@@ -421,10 +430,30 @@ img {
 .sticky {
   position: fixed;
   top: 0;
-  width: 95%; }
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  background-color: #70808f;
+  opacity: 0.9; }
+  .sticky ul {
+    display: flex; }
+  .sticky li {
+    padding: 1rem 1.5rem; }
+  .sticky a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    .sticky a:hover {
+      border-color: #3f4267; }
+    .sticky a.current {
+      border-color: #ec3238; }
 
 #main-footer {
-  background: #333;
+  background: #3f4267;
   color: #fff;
   height: 5rem; }
   #main-footer .footer-content {
