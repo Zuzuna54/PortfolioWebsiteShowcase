@@ -65,35 +65,6 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-  function myFunction1() {
-    document.getElementById("Fed-Drop").classList.toggle("show");
-  }
-  function myFunction2() {
-    document.getElementById("nat-drop").classList.toggle("show");
-  }
-  function myFunction3() {
-    document.getElementById("club-drop").classList.toggle("show");
-  }
-  function myFunction4() {
-    document.getElementById("var-drop").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
-      }
-    }
-  };
-
   window.onscroll = function () {
     stickyFunction();
   };
@@ -113,3 +84,32 @@ toggle between hiding and showing the dropdown content */
     }
   }
 });
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+  document.getElementById("Fed-Drop").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("nat-drop").classList.toggle("show");
+}
+function myFunction3() {
+  document.getElementById("club-drop").classList.toggle("show");
+}
+function myFunction4() {
+  document.getElementById("var-drop").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
