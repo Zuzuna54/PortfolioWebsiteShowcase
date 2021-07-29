@@ -65,21 +65,39 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  let scrolled = false;
+  const navbar = document.getElementById("navbar");
+  console.log(navbar);
   window.onscroll = function () {
-    stickyFunction();
+    if (window.pageYOffset > 100) {
+      navbar.classList.remove("top");
+      if (!scrolled) {
+        navbar.style.transform = "translateY(-70px)";
+      }
+      setTimeout(function () {
+        navbar.style.transform = "translateY(0px)";
+      }, 100);
+    } else {
+      navbar.classList.add("top");
+    }
   };
 
-  var navbar = document.getElementsByClassName("navbar")[0];
-  var sticky = navbar.offsetTop;
-  var offset = window.pageYOffset;
+  // Smooth Scrolling/Jquerry
+  $("#navbar a, .btn").on("click", function (e) {
+    console.log("JQ loaded");
+    if (this.hash !== "") {
+      e.preventDefault();
 
-  function stickyFunction() {
-    if (offset >= sticky) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 100,
+        },
+        800
+      );
     }
-  }
+  });
 });
 
 /* When the user clicks on the button, 
