@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  // Smooth Scrolling/Jquerry
+  // Smooth Scrolling/ Jquery
   $("#navbar a, .btn").on("click", function (e) {
     console.log("JQ loaded");
     if (this.hash !== "") {
