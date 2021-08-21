@@ -22,64 +22,123 @@
   <body>
     <!-- Header -->
     <header id="header-home">
+        <div id="nav-wrap">
         <div id="navbar" class="navbar top">
            <img src="img/logo1.png" alt="My Portfolio" id="logo" />
           <ul>
-            <li><a href="index.html" class="current">Home</a></li>
+            <li><div class="dropdown">
+                <button class="current">
+                  Home
+                </button>
+              </div></li>
             <li>
               <div class="dropdown">
-                <button onmouseover="myFunction1()" class="dropbtn">
+                <button class="dropbtn">
                   Federation
                 </button>
-                <div id="Fed-Drop" class="dropdown-content">
-                  <a href="#home">About us</a>
-                  <a href="#about">Documentation</a>
-                  <a href="#contact">Regions</a>
+                <div id="drop-1" class="dropdown-content">
+                    <div>
+                        <a class="drop-title" > Federation </a>
+                        <a href="#home">About us</a>
+                        <a href="#about">Documentation</a>
+                        <a href="#contact">Regions</a>
+                    </div>
+                    <div> 
+                        <a class="drop-title">Variety</a>
+                        <a>Classic</a>
+                        <a>Sand</a>
+                        <a>Snow</a>
+                        <a>TechVolley</a>
+                        <a>ParaVolley</a>
+                    </div>
+                    <div> 
+                        <a class="drop-title">Regions</a>
+                        <a>Adjara</a>
+                        <a>Guria</a>
+                        <a>Tbilis</a>
+                        <a>Imereti</a>
+                        <a>Khakheti</a>
+                        <a>Mckheta-Mtianeti</a>
+                        <a>Racha-Lechkhumi</a>
+                        <a>Qvemo Qartli</a>
+                    </div>
+                    <div> 
+                        <a class="drop-title">Documentation</a>
+                        <a>Rules</a>
+                        <a>Literature</a>
+                    </div>
+
                 </div>
+                
               </div>
             </li>
-            <li><div class="dropdown">
+            <li>
+                <button>
+                    News
+                </button>
+            </li>
+            <li>
+                <div class="dropdown">
                 <button onclick="myFunction2()" class="dropbtn">
                   National Teams
                 </button>
-                <div id="nat-drop" class="dropdown-content">
-                  <a href="#home">Men</a>
-                  <a href="#about">Women</a>
-                  <a href="#contact">U18 Boys</a>
-                  <a href="#contact">U17 Girls</a>
-                </div></li>
-            <li><div class="dropdown">
+                <div id="drop" class="dropdown-content">
+                    <div>
+                        <a class="drop-title">Men</a>
+                        <a>National</a>
+                        <a href="">Youth</a>
+                    </div>  
+                    <div>
+                        <a href="#about" class="drop-title">Women</a>
+                        <a href="">Natioanl</a>
+                        <a href="">Youth</a>
+                    </div>  
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
                 <button onclick="myFunction3()" class="dropbtn">
                   Clubs
                 </button>
-                <div id="club-drop" class="dropdown-content">
-                  <a href="#home">Highest Legue</a>
-                  <a href="#about">First Legue</a>
-                  <a href="#contact">Amateur Legue</a>
-                </div></li>
-            <li><div class="dropdown">
-                <button onclick="myFunction4()" class="dropbtn">
-                  Veraety
-                </button>
-                <div id="var-drop" class="dropdown-content">
-                  <a href="#home">CLassic</a>
-                  <a href="#about">Sand</a>
-                  <a href="#contact">Snow</a>
-                  <a href="#contact">Parafren</a>
-                  <a href="#contact">TecVol</a>
-                </div></li>
-            <li><a href="contact.html">Calendar</a></li>
-            <li><a href="contact.html">Contact</a></li>
+                <div id="drop" class="dropdown-content">
+                    <div>
+                        <a class="drop-title" href="#home">Mens Legue</a>
+                        <a href="#home">Highest Legue</a>
+                        <a href="#about">First Legue</a>
+                        <a href="#contact">College Legue</a>
+                        <a href="#contact">HighSchool Legue</a>
+                    </div>
+                    <div>
+                        <a class="drop-title" href="#home">Womens Legue</a>
+                        <a href="#home">Highest Legue</a>
+                        <a href="#about">First Legue</a>
+                        <a href="#contact">College Legue</a>
+                        <a href="#contact">HighSchool Legue</a>
+                    </div>
+                    <div>
+                        <a class="drop-title" href="#home">Mixed</a>
+                        <a href="#home">Amateur</a>
+                    </div>
+                   
+                </div>
+            </li>
+            <li>
+                <button href="">Calendar</button>
+            </li>
+            <li>
+                <button href="contact.html">Contact</button>
+            </li>
           </ul>
+        </div>
         </div>
 
         <div class="header-content">
           <h1>
-            This is not Just a Sport it's 
+            This is not Just a Sport it's a
             <span
               class="txt-type"
-              data-wait="3000"
-              data-words='["Passion!", "Life-Style!", "Devotion!"]'
+              data-wait="3000"Devotion
+              data-words='["Lifestyle!", "Passion!", "!"]'
             ></span>
           </h1>
         </div>
@@ -89,140 +148,179 @@
     <!-- Section A: Specialize -->
     <section id="home-a" class="text-center py-2">
       <div class="container">
-        <h2 class="section-title">I Specialize In</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">
-          Photography as well as creating digital masterpieces and UI/UX layouts
-          for websites and mobile applications
-        </p>
-        <div class="specials">
-          <div>
-            <i class="fas fa-file-alt fa-2x"></i>
-            <h3>Concepting</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-2x"></i>
-            <h3>UI/UX</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-2x"></i>
-            <h3>Visual Design</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-2x"></i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              molestias repellat quibusdam adipisci quas sed ullam accusantium
-              aliquam numquam quidem.
-            </p>
-          </div>
+      <h2>News</h2>
+      <div class="bottom-line"></div>
+        <div class="h-scroll">
+            <div class="news-menu">
+            <div>
+                <img src="img/istockphoto-1182477852-612x612.jpeg" alt="Girl in a jacket" >
+                <p> Lorem ipsum dolor sit<br> amet consectetur <br>adipisicing elit.<br> Maiores voluptas <br>laborum 
+            </div>
+            <div>
+                <img src="img/istockphoto-1182477852-612x612.jpeg" alt="Girl in a jacket" >
+                  <p> Lorem ipsum dolor sit<br> amet consectetur <br>adipisicing elit.<br> Maiores voluptas <br>laborum 
+            </div>
+            <div>
+                <img src="img/istockphoto-1182477852-612x612.jpeg" alt="Girl in a jacket" >
+                 <p> Lorem ipsum dolor sit<br> amet consectetur <br>adipisicing elit.<br> Maiores voluptas <br>laborum 
+            </div>
+            <div>
+                <img src="img/istockphoto-1182477852-612x612.jpeg" alt="Girl in a jacket" >
+                 <p> Lorem ipsum dolor sit<br> amet consectetur <br>adipisicing elit.<br> Maiores voluptas <br>laborum 
+            </div>
+            <div>
+                <img src="img/istockphoto-1182477852-612x612.jpeg" alt="Girl in a jacket" >
+                 <p> Lorem ipsum dolor sit<br> amet consectetur <br>adipisicing elit.<br> Maiores voluptas <br>laborum 
+            </div>
+            </div>
+            <div class="side-panel"> </div>
         </div>
-      </div>
+      </>
     </section>
 
     <!-- Section B: Stats -->
     <section id="home-b" class="text-center py-2">
-      <div class="stats">
-        <div>
-          <ul>
-            <li><i class="fas fa-users fa-3x"></i></li>
-            <li class="stats-title">Clients</li>
-            <li class="stats-number">100</li>
-          </ul>
+      <div class="container"> 
+        <h2>Varieties</h2>
+        <div class="bottom-line"></div>
+        <div class="items">
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img/classic.png" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                    
+                    <h2 class="item-text-title">Classic</h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img/beach.png" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                    
+                    <h2 class="item-text-title">Sand</h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img/tech.jpg" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                    
+                    <h2 class="item-text-title">TechVolley</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-award fa-3x"></i></li>
-            <li class="stats-title">Awards</li>
-            <li class="stats-number">3</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-hourglass-start fa-3x"></i></li>
-            <li class="stats-title">Hours Worked</li>
-            <li class="stats-number">3500</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li><i class="fas fa-code-branch fa-3x"></i></li>
-            <li class="stats-title">Projects Completed</li>
-            <li class="stats-number">135</li>
-          </ul>
-        </div>
+
       </div>
     </section>
 
     <!-- Section C: Process -->
     <section id="home-c" class="text-center py-2">
-      <div class="container">
-        <h2 class="section-title">My Creative Process</h2>
+      <div class="container"> 
+        <h2>Teams/Clubs</h2>
         <div class="bottom-line"></div>
-        <p class="lead">
-          All of my UI/UX and design projects are based off of a practiced
-          formula to get the result that I am looking for
-        </p>
-        <div class="process">
-          <div>
-            <i class="fas fa-file-alt fa-4x process-icon my-2">
-              <div class="process-step">1</div>
-            </i>
-            <h3>Discuss The Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-desktop fa-4x process-icon my-2">
-              <div class="process-step">2</div>
-            </i>
-            <h3>Brainstorming ^ Concept</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-              <div class="process-step">3</div>
-            </i>
-            <h3>UI/UX Planning</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
-          <div>
-            <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-              <div class="process-step">4</div>
-            </i>
-            <h3>Interaction</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              voluptas laborum repellendus dolorum! Harum, cupiditate.
-            </p>
-          </div>
+        <div class="items">
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img/items/item1.png" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                    
+                    <h2 class="item-text-title">Men</h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img/women.png" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                    
+                    <h2 class="item-text-title">Women</h2>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="item-image">
+                    <img src="./img/para.png" alt="">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                    
+                    <h2 class="item-text-title">ParaVolley</h2>
+                    </div>
+                </div>
+            </div>
         </div>
+
       </div>
     </section>
+    <section id="sponsors" class="text-center py-2">
+        <div class="container">
+        <h2>Sponsors</h2>
+        <div class="bottom-line"></div>
+            <div class="sponsor">
+                <div class="heading">
+                    <h4>Global</h4>
+                    <h4>Local</h4>
+                    <h4>Brands</h4>
+                </div>
+                <div class ="logos">
+                    <div>
+                       <img src="./img/eevza-logo-small-rgb-txt.jpeg" alt="">
+                       <img src="./img/download.png" alt="">
+                       <img src="./img/fivb.png" alt="">
+                    </div>
+                    <div class="local">
+                        <img src="./img/borjomi.jpg" alt="">
+                        <img src="./img/bakuriani.jpeg" alt="">
+                        <img src="./img/bakuriani.jpeg" alt="">
+                        <img src="./img/tbilisi.png" alt="">
+                        <img src="./img/sport.jpeg" alt="">
+                    </div>
+                    <div class="brands">
+                        <img src="./img/mikasa.jpeg" alt="">
+                        <img src="./img/mizuno.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer-Nav -->
+    <footer id="footer-nav">
+      <div class="footer-content container">
+        <div class="footer-nav">
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- Footer -->
     <footer id="main-footer">
